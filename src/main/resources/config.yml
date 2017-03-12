@@ -1,0 +1,36 @@
+# For Kafka
+TOPIC: iot-streaming
+PRODUCTION_SPEED: 1
+CONSUMER_TIMEOUT: 1000
+
+# For Flink
+WINDOW: 10
+SLIDE: 1
+
+# For Spark
+SPARK_MASTER: localhost
+SPARK_PORT: 8080
+
+# For Cassandra
+CASSANDRA_DNS: localhost
+
+# For HDFS
+# String HDFS_DIR;
+# String HDFS_DNS;
+# int HDFS_PORT;
+# long HDFS_MAXSIZE;
+
+# For ELASTIC
+# String[] ELASTIC_DNS;
+# int ELASTIC_PORT;
+# String ELASTIC_FLUSH;
+# String ELASTIC_CLUSTER;
+
+
+
+
+
+
+
+
+

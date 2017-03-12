@@ -1,0 +1,24 @@
+curl -XPUT 'http://localhost:9200/warbler'
+curl -XPUT 'http://localhost:9200/blackbird'
+curl -XPUT 'http://localhost:9200/chickadee'
+curl -XPUT 'http://localhost:9200/crow'
+curl -XPUT 'http://localhost:9200/dove'
+curl -XPUT 'http://localhost:9200/finch'
+curl -XPUT 'http://localhost:9200/nuthatch'
+curl -XPUT 'http://localhost:9200/hawk'
+curl -XPUT 'http://localhost:9200/sparrow'
+curl -XPUT 'http://localhost:9200/thrush'
+curl -XPUT 'http://localhost:9200/wren'
+curl -XPUT 'http://localhost:9200/owl'
+
+curl -XPUT 'http://localhost:9200/warbler/_mapping/sighting' -d '
+{
+    "properties": {
+        "name": {"type": "string", "index": "not_analyzed"},
+        "location": {
+            "type": "geo_point",
+            "geohash_prefix": true
+        },
+        "timestamp": {"type": "date"}
+    }
+}'
