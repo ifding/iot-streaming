@@ -43,7 +43,7 @@ IoT Streaming using Flink to connect Kafka and Cassandra, Elastic
         return stream;
 	```
  
- * Flink $ Cassandra
+* Flink & Cassandra
  
  	* Maven dependency
 	
@@ -61,7 +61,7 @@ IoT Streaming using Flink to connect Kafka and Cassandra, Elastic
         </dependency>
 	```
 	 
- * Flink & Elasticsearch Connector
+* Flink & Elasticsearch Connector
  
 	* Maven dependency
 	
